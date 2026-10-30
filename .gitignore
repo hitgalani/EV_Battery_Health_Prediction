@@ -1,38 +1,55 @@
-# Python virtual environments
+# =====================================================
+# EV Battery Health Prediction - .gitignore
+# Team: Hit Galani (hitgalani) and Goti Nisarg (GotiNIsarg)
+# =====================================================
+
+# ---------- Python virtual environments ----------
 venv/
 .venv/
 .venv-*/
 env/
 ENV/
 
-# Environment variable / secret files
+# ---------- Secret and environment files ----------
 .env
+.env.*
+!.env.example
 
-# Python cache
+# ---------- Python cache and build files ----------
 __pycache__/
 *.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
 
-# VS Code settings
+# ---------- Editor settings ----------
 .vscode/
+.idea/
 
-# Course learning material (not part of the project)
+# ---------- Course learning material (not part of the project) ----------
 Fundamentals of Machine Learning/
 
-# Jupyter
+# ---------- Jupyter ----------
 .ipynb_checkpoints/
 
-# Operating system files
+# ---------- Operating system files ----------
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Logs and temporary files
+# ---------- Logs and temporary files ----------
 *.log
 *.tmp
+*.bak
+*.swp
 
-# Optional: skip large auto-generated Sweetviz reports
+# ---------- Optional (remove the # to turn on) ----------
+# Skip large auto-generated Sweetviz reports:
 # Reports/Sweetviz_EDA_Report.html
 # Main/Main-2-Reports/Sweetviz_EDA_Report.html
 
-# Optional: skip the dataset (download it from Kaggle instead)
+# Skip the dataset (people download it from Kaggle instead).
+# Keep it committed if the project must run right after cloning:
 # Dataset/EV_Battery_Dataset.csv
