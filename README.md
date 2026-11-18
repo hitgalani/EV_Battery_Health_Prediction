@@ -301,6 +301,7 @@ We also use AI assistants as a study partner to understand the workflow, code an
 | Version | When | What changed |
 |---|---|---|
 | **v1.0.0** | Semester 3 | First complete version: supervised learning pipeline, EDA reports, learning website |
+| v1.0.2 | Semester 3 | Restored project report, final README and roadmap |
 | v2.0.0 | Semester 4 (planned) | Unsupervised learning, deployment, updated code and dataset |
 
 ---
