@@ -7,121 +7,131 @@
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9.1-orange?logo=scikitlearn&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-2.2.3-150458?logo=pandas&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed%20%7C%20Updates%20Coming-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen)
+![Semester 3](https://img.shields.io/badge/Semester%203-Supervised%20Learning%20Complete-brightgreen)
+![Semester 4](https://img.shields.io/badge/Semester%204-Planned-lightgrey)
 ![Data](https://img.shields.io/badge/Data-Synthetic-yellow)
-![Level](https://img.shields.io/badge/Level-Beginner%20Friendly-blueviolet)
 
 **Hit Galani** ([@hitgalani](https://github.com/hitgalani)) &nbsp;·&nbsp; **Goti Nisarg** ([@GotiNIsarg](https://github.com/GotiNIsarg))
 
-*SYBCA (AI) · Semester 3 · SBCCAS, Amroli*
-
-⭐ **If this project helps you, please give it a star!** ⭐
+*SYBCA (AI) · SBCCAS, Amroli · Surat, Gujarat*
 
 </div>
 
 ---
 
 > ⚠️ **Learning project only.**
-> The dataset is **synthetic** (computer-generated), not measured from real batteries. This is not a certified battery diagnostic tool. **Never use it for decisions about a real car or battery.**
+> The dataset is **synthetic** (computer-generated), not measured from real batteries. This is not a battery diagnostic tool. **Never use it for decisions about a real car or battery.**
 
 ---
 
-## 📑 Table of Contents
+## 📑 Contents
 
-1. [About the Project](#-about-the-project)
-2. [College and Course](#-college-and-course)
-3. [Project Status and Timeline](#-project-status-and-timeline)
-4. [Screenshots](#️-screenshots)
-5. [Dataset](#-dataset)
-6. [Machine Learning Approach](#-machine-learning-approach)
-7. [Workflow](#-workflow)
-8. [Results](#-results)
-9. [Class Imbalance Warning](#️-class-imbalance-warning)
-10. [Project Files and Code Guide](#-project-files-and-code-guide)
-11. [Installation and Usage](#-installation-and-usage)
-12. [Technologies](#-technologies)
-13. [Learning Resources](#-learning-resources)
-14. [How I Used AI to Learn](#-how-i-used-ai-to-learn)
-15. [Future Updates](#-future-updates)
-16. [Support This Project](#-support-this-project)
-17. [Glossary](#-glossary)
-18. [Acknowledgements](#-acknowledgements)
+1. [About](#-about)
+2. [Project Roadmap](#-project-roadmap)
+3. [Results (Version 1)](#-results-version-1)
+4. [Dataset](#-dataset)
+5. [How It Works](#-how-it-works)
+6. [Project Structure](#-project-structure)
+7. [Installation and Usage](#-installation-and-usage)
+8. [Technologies](#-technologies)
+9. [Learning Resources](#-learning-resources)
+10. [Changelog](#-changelog)
+11. [Team](#-team)
+12. [Glossary](#-glossary)
 
 ---
 
-## 🚀 About the Project
+## 🚀 About
 
-The **State of Health (SoH)** tells us how much life an electric-car battery has left compared with a new one: 100% is like new, and lower values mean more wear.
+**State of Health (SoH)** shows how much life an electric-car battery has left compared with a new one. 100% is like new; lower values mean more wear.
 
 This project uses **five simple measurements** to:
 
-1. **Predict a number:** the battery's SoH (%) using **Linear Regression**.
-2. **Predict a label:** the battery's status (*Healthy* or *Not Healthy*) using **Logistic Regression**.
+1. **Predict a number**: the battery's SoH (%) using **Linear Regression**.
+2. **Predict a label**: the battery's status (*Healthy* or *Not Healthy*) using **Logistic Regression**.
 
 It follows the full beginner ML journey: **load → clean → explore → split → train → test → predict.**
 
 ---
 
-## 🎓 College and Course
+## 🗺️ Project Roadmap
 
-| Detail | Info |
-|---|---|
-| **College** | Sutex Bank College of Computer Applications & Science (SBCCAS), Amroli, Surat, Gujarat |
-| **University** | Veer Narmad South Gujarat University (VNSGU) |
-| **Course** | BCA (Artificial Intelligence), **SYBCA** |
-| **Semester** | **Semester 3** |
-| **Project type** | Academic team project |
+This is a **long-term learning project**. It grows as we learn, one semester at a time.
 
-### 👥 Team
-
-| Name | Roll No. | GitHub |
-|---|---:|---|
-| **Hit Galani** (team leader) | 577 | [@hitgalani](https://github.com/hitgalani) |
-| **Goti Nisarg** | 574 | [@GotiNIsarg](https://github.com/GotiNIsarg) |
-
-We are SYBCA AI students, and this project is part of our Semester 3 learning in Python, Machine Learning and data science.
-
----
-
-## 📅 Project Status and Timeline
-
-**Current status: ✅ Completed (version 1).** The full pipeline works, from data loading to user prediction. **More updates are coming**, see [Future Updates](#-future-updates).
-
-| Phase | What we did | Status |
+| Semester | Focus | Status |
 |---|---|---|
-| 1. Learn | Studied supervised ML, regression and classification | ✅ Done |
-| 2. Data | Chose and inspected the Kaggle dataset | ✅ Done |
-| 3. Explore | Cleaning, outlier check, EDA charts, Sweetviz report | ✅ Done |
-| 4. Build | Simple, Multiple and Logistic models | ✅ Done |
-| 5. Evaluate | Test set, metrics, five-fold cross-validation | ✅ Done |
-| 6. Document | README, report and learning website | ✅ Done |
-| 7. Improve | Input checks, better data, more charts | 🔜 Coming |
+| **Semester 3** | **Supervised learning**: Simple, Multiple and Logistic Regression, evaluation, cross-validation, EDA report | ✅ **Complete (Version 1)** |
+| **Semester 4** | **Unsupervised learning** and **deployment**, applied to this same project | 🔜 Planned |
+| **After Semester 4** | Update the code and the dataset using what we learned | 🔜 Planned |
+
+### Planned for Semester 4
+- Learn unsupervised learning and add it to this project
+- Learn deployment and make the model usable outside the terminal
+- Add friendly input checks (for example, reject a fast-charge ratio above 1)
+- Replace the dataset with a better one that has enough examples of every status
+- Handle class imbalance properly
+- Add screenshots and clearer charts to this README
+
+> The Semester 4 plan may change as we learn. This README is updated whenever the project changes (see [Changelog](#-changelog)).
 
 ---
 
-## 🖼️ Screenshots
+## 📈 Results (Version 1)
 
-Open the full visual reports in the repo:
+> These come from **one recorded run on one test split**. They may change if the data or code changes.
+
+### Regression (predicting SoH %)
+
+| Model | MAE | MSE | RMSE | Test R² |
+|---|---:|---:|---:|---:|
+| Simple Linear Regression | 1.1219 | 2.6577 | 1.6302 | 0.7500 |
+| **Multiple Linear Regression** 🏆 | 1.0683 | 2.2113 | 1.4870 | 0.7920 |
+
+### Classification (positive class = Not Healthy)
+
+| Metric | Value |
+|---|---:|
+| Accuracy | 99.65% |
+| Precision | 12.50% |
+| Recall | 100% |
+| F1 score | 22.22% |
+
+| Actual ↓ / Predicted → | Not Healthy | Healthy |
+|---|---:|---:|
+| **Not Healthy** | 1 | 0 |
+| **Healthy** | 7 | 1992 |
+
+### Five-Fold Cross-Validation
+
+| Model | F1 | F2 | F3 | F4 | F5 | Mean |
+|---|---:|---:|---:|---:|---:|---:|
+| Simple Linear (R²) | 0.7500 | 0.7631 | 0.7599 | 0.7678 | 0.7713 | 0.7624 |
+| Multiple Linear (R²) | 0.7920 | 0.7960 | 0.7959 | 0.8065 | 0.8036 | 0.7988 |
+| Logistic (accuracy) | 0.9945 | 0.9975 | 0.9970 | 0.9965 | 0.9950 | 0.9961 |
+
+### ⚖️ Class imbalance warning
+
+The data is **very unbalanced**: **9,996** `Healthy` rows and only **4** `Replace Required` rows. A model that always says "Healthy" would score about **99.96% accuracy**, so our 99.65% does **not** prove the rare class is handled well. The low precision (12.5%) means 7 Healthy batteries were wrongly flagged.
+
+💡 **Lesson:** accuracy alone can fool you. Always check precision, recall and the confusion matrix. Fixing this is a goal for the next version.
+
+### What the metrics mean
+
+| Metric | Simple meaning |
+|---|---|
+| **MAE** | Average error size, in SoH percentage points |
+| **MSE / RMSE** | Squared error and its square root (big mistakes count more) |
+| **R²** | How much of SoH's variation the model explains (closer to 1 is better) |
+| **Accuracy** | Share of all predictions that were right |
+| **Precision** | Of those predicted Not Healthy, how many really were |
+| **Recall** | Of the real Not Healthy rows, how many were found |
+| **F1** | A balance of precision and recall |
+
+### Visual reports
 
 - 📊 [Project report (HTML)](Reports/EV_Battery_Project_Report.html)
 - 🍬 [Sweetviz EDA report (HTML)](Reports/Sweetviz_EDA_Report.html)
-
-<!--
-SCREENSHOT TEMPLATE: replace the file names below with your real images in Reports/,
-then delete the comment markers (the first and last line of this block).
-
-<div align="center">
-
-<img src="Reports/soh_vs_cycles.png" alt="Scatter chart of SoH against charging cycles" width="720">
-
-*Figure 1: SoH (%) against total charging cycles*
-
-<img src="Reports/correlation_heatmap.png" alt="Correlation heatmap of the battery features" width="720">
-
-*Figure 2: Correlation between the battery features*
-
-</div>
--->
 
 ---
 
@@ -155,7 +165,7 @@ then delete the comment markers (the first and last line of this block).
 
 ---
 
-## 🧠 Machine Learning Approach
+## 🧠 How It Works
 
 | Task | Model | Inputs | Target |
 |---|---|---|---|
@@ -169,9 +179,7 @@ then delete the comment markers (the first and last line of this block).
 - **Scaling:** inputs are scaled for Logistic Regression so large numbers (cycles) do not dominate small ones (a 0 to 1 ratio).
 - **No target leakage:** `SoH_Percent` is *not* used to predict status, because it would reveal the answer.
 
----
-
-## 🔄 Workflow
+### Workflow
 
 | Step | What happens |
 |---|---|
@@ -189,93 +197,32 @@ then delete the comment markers (the first and last line of this block).
 
 ---
 
-## 📈 Results
-
-> These are from **one recorded run on one test split**. They may change if the data or code changes.
-
-### Regression (predicting SoH %)
-
-| Model | MAE | MSE | RMSE | Test R² |
-|---|---:|---:|---:|---:|
-| Simple Linear Regression | 1.1219 | 2.6577 | 1.6302 | 0.7500 |
-| **Multiple Linear Regression** 🏆 | 1.0683 | 2.2113 | 1.4870 | 0.7920 |
-
-### Classification (positive class = Not Healthy)
-
-| Metric | Value |
-|---|---:|
-| Accuracy | 99.65% |
-| Precision | 12.50% |
-| Recall | 100% |
-| F1 score | 22.22% |
-
-| Actual ↓ / Predicted → | Not Healthy | Healthy |
-|---|---:|---:|
-| **Not Healthy** | 1 | 0 |
-| **Healthy** | 7 | 1992 |
-
-### Five-Fold Cross-Validation
-
-| Model | F1 | F2 | F3 | F4 | F5 | Mean |
-|---|---:|---:|---:|---:|---:|---:|
-| Simple Linear (R²) | 0.7500 | 0.7631 | 0.7599 | 0.7678 | 0.7713 | 0.7624 |
-| Multiple Linear (R²) | 0.7920 | 0.7960 | 0.7959 | 0.8065 | 0.8036 | 0.7988 |
-| Logistic (accuracy) | 0.9945 | 0.9975 | 0.9970 | 0.9965 | 0.9950 | 0.9961 |
-
-### What the metrics mean
-
-| Metric | Simple meaning |
-|---|---|
-| **MAE** | Average error size, in SoH percentage points |
-| **MSE / RMSE** | Squared error and its square root (big mistakes count more) |
-| **R²** | How much of SoH's variation the model explains (closer to 1 is better) |
-| **Accuracy** | Share of all predictions that were right |
-| **Precision** | Of those predicted Not Healthy, how many really were |
-| **Recall** | Of the real Not Healthy rows, how many were found |
-| **F1** | A balance of precision and recall |
-
----
-
-## ⚖️ Class Imbalance Warning
-
-The data is **very unbalanced**: **9,996** `Healthy` rows and only **4** `Replace Required` rows.
-
-A model that always says "Healthy" would score about **99.96% accuracy**, so our 99.65% accuracy does **not** prove the rare class is handled well. The low precision (0.125) means 7 Healthy batteries were wrongly flagged.
-
-💡 **Lesson:** accuracy alone can fool you. Always check precision, recall and the confusion matrix.
-
----
-
-## 📂 Project Files and Code Guide
+## 📂 Project Structure
 
 ```text
 EV_Battery_Health_Prediction/
 ├── Dataset/
 │   └── EV_Battery_Dataset.csv
 ├── Python_Code/
-│   └── project.py
-├── Reports/
-│   ├── EV_Battery_Project_Report.html
-│   ├── Sweetviz_EDA_Report.html
-│   └── *.png
-├── Learning_Website/
-│   ├── index.html
-│   └── images/
-├── README.md
+│   └── project.py            # main script (Version 1)
+├── Reports/                  # charts (.png) and HTML reports
+├── Report in Main Code/      # extra report outputs
+├── Learning_Website/         # offline beginner guide with images
+├── main.py                   # additional script
+├── main2.py                  # additional script
 ├── requirements.txt
+├── README.md
 └── .gitignore
 ```
 
 | File / folder | What it is |
 |---|---|
-| `Dataset/EV_Battery_Dataset.csv` | The data used for training and testing |
-| `Python_Code/project.py` | The main script. It does everything in the [Workflow](#-workflow), from loading to prediction |
-| `Reports/` | Saved charts (`.png`), the project report and the Sweetviz EDA report |
+| `Python_Code/project.py` | The main script. It does everything in the workflow above, from loading to prediction |
+| `Reports/` | Saved charts, the project report and the Sweetviz EDA report |
 | `Learning_Website/` | An offline beginner guide with images |
 | `requirements.txt` | Exact library versions |
-| `.gitignore` | Files Git should ignore, such as `.venv/` |
 
-**About the models:** the three models (Simple Linear, Multiple Linear, Logistic) are trained inside `project.py` each time it runs. This README does not document a separately saved model file.
+Models are trained inside the script every time it runs. No separate saved model file exists yet (deployment is planned for Semester 4).
 
 ---
 
@@ -336,72 +283,44 @@ The program prints the battery status, predicted SoH (%), probability of Healthy
 
 ## 📚 Learning Resources
 
-Resources that help you understand each part of this project:
-
 | Topic | Resource |
 |---|---|
-| Machine Learning basics, Python, pandas | [Kaggle Learn (free courses)](https://www.kaggle.com/learn) |
+| ML basics, Python, pandas | [Kaggle Learn](https://www.kaggle.com/learn) |
 | Linear and Logistic Regression, metrics | [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) |
 | Data tables | [pandas documentation](https://pandas.pydata.org/docs/) |
 | Number calculations | [NumPy documentation](https://numpy.org/doc/) |
 | Charts | [Matplotlib](https://matplotlib.org/stable/) · [Seaborn](https://seaborn.pydata.org/) |
-| Our dataset | [Kaggle dataset page](https://www.kaggle.com/datasets/bertnardomariouskono/electric-vehicle-ev-battery-degradation-and-charge) |
+| Dataset | [Kaggle dataset page](https://www.kaggle.com/datasets/bertnardomariouskono/electric-vehicle-ev-battery-degradation-and-charge) |
 
-### 🎥 Videos we learned from
+We also use AI assistants as a study partner to understand the workflow, code and metrics. We run the code ourselves, and every result here comes from our own run.
 
-> Add the video titles and links you really watched here.
+---
 
-| Topic | Video title | Link |
+## 📝 Changelog
+
+| Version | When | What changed |
 |---|---|---|
-| Linear Regression | *(add title)* | *(add link)* |
-| Logistic Regression | *(add title)* | *(add link)* |
-| Train/test split and cross-validation | *(add title)* | *(add link)* |
+| **v1.0.0** | Semester 3 | First complete version: supervised learning pipeline, EDA reports, learning website |
+| v2.0.0 | Semester 4 (planned) | Unsupervised learning, deployment, updated code and dataset |
 
 ---
 
-## 🤖 How I Used AI to Learn
+## 👥 Team
 
-I used AI assistants as a **study partner**, not as a replacement for learning. They helped me:
+| Name | Roll No. | GitHub |
+|---|---:|---|
+| **Hit Galani** (team leader) | 577 | [@hitgalani](https://github.com/hitgalani) |
+| **Goti Nisarg** | 574 | [@GotiNIsarg](https://github.com/GotiNIsarg) |
 
-- 🧠 Understand each step of the ML workflow in simple words.
-- 💻 Read and understand the code in `project.py`, section by section.
-- 📊 Understand what MAE, RMSE, R², precision, recall and F1 mean.
-- 📝 Improve the writing and layout of this README.
+**College:** Sutex Bank College of Computer Applications & Science (SBCCAS), Amroli, Surat, Gujarat
+**University:** Veer Narmad South Gujarat University (VNSGU)
+**Course:** BCA (Artificial Intelligence), SYBCA
 
-I ran the code myself, and every result in this README comes from our own run. Using AI to learn is fine, but always **understand what you submit and check it yourself**.
+Thanks to our teachers at SBCCAS, [Kaggle](https://www.kaggle.com/datasets/bertnardomariouskono/electric-vehicle-ev-battery-degradation-and-charge) for the dataset, and the open-source Python and ML community.
 
----
+⭐ If this project helps you learn, please star the repo. **Star or watch** it to see updates.
 
-## 🔜 Future Updates
-
-The project is complete, and **more updates are coming**:
-
-- [ ] Friendly input checks (for example, reject a fast-charge ratio above 1)
-- [ ] Clearer chart titles, labels and screenshots in this README
-- [ ] Better Learning Website layout
-- [ ] A licensed, teacher-approved dataset with enough examples of every status
-- [ ] Careful handling of class imbalance, explained simply
-- [ ] Remaining useful life prediction, if suitable data exists
-
-⭐ **Star** or **watch** this repository to see updates as they arrive.
-
----
-
-## ⭐ Support This Project
-
-If this project helped you learn, please **give it a star** (the ⭐ button at the top right of the page).
-
-**How a star helps**
-- 🌱 It tells us the project is useful and keeps us motivated to add updates.
-- 🔍 It helps other students find a beginner-friendly ML project.
-- 📌 It bookmarks the repo on your GitHub, so you can come back to it later.
-
-**How it helps you**
-- You get a simple project to learn from and to build on.
-- Your starred list becomes your personal library of projects.
-- Starring or watching shows you our future updates.
-
-You can also **fork** the project to practise, and open an **Issue** with suggestions or questions. 🙏
+> 📜 **License:** not yet chosen. Add a `LICENSE` file and check the Kaggle dataset's license before sharing widely.
 
 ---
 
@@ -414,6 +333,9 @@ You can also **fork** the project to practise, and open an **Issue** with sugges
 | **Synthetic data** | Data made by a computer, not measured from real things |
 | **Feature** | An input the model uses |
 | **Target** | The answer the model predicts |
+| **Supervised learning** | Learning from data that already has the correct answers |
+| **Unsupervised learning** | Finding patterns in data that has no answers |
+| **Deployment** | Making a model usable by other people |
 | **Regression** | Predicting a number |
 | **Classification** | Predicting a category |
 | **Cross-validation** | Testing on several splits to check that scores are stable |
@@ -424,22 +346,10 @@ You can also **fork** the project to practise, and open an **Issue** with sugges
 
 ---
 
-## 🙏 Acknowledgements
-
-- **SBCCAS, Amroli** and our teachers for guidance and support
-- [Kaggle](https://www.kaggle.com/datasets/bertnardomariouskono/electric-vehicle-ev-battery-degradation-and-charge) for the dataset
-- The open-source Python and ML community
-
-> 📜 **License:** not yet chosen. Add a `LICENSE` file and check the Kaggle dataset's license before sharing widely.
-
----
-
 <div align="center">
 
-**Developed by Hit Galani and Goti Nisarg** · SYBCA (AI), Semester 3, SBCCAS Amroli
+**Developed by Hit Galani and Goti Nisarg** · SYBCA (AI), SBCCAS Amroli
 
 *Learning project only. Not for real battery safety decisions.*
-
-⭐ **Thank you for visiting! If you liked it, please star the repo.** ⭐
 
 </div>
